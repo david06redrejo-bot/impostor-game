@@ -1,0 +1,6076 @@
+{
+  "pack_meta": {
+    "pack_id": "base_v1",
+    "name": "Pack Base — El Impostor",
+    "version": 1,
+    "language": "es",
+    "is_free": true
+  },
+  "categories": [
+    {
+      "id": "animals",
+      "name": "Animales",
+      "icon_emoji": "🐾",
+      "is_premium": false,
+      "sort_order": 1
+    },
+    {
+      "id": "food",
+      "name": "Comida y Bebida",
+      "icon_emoji": "🍕",
+      "is_premium": false,
+      "sort_order": 2
+    },
+    {
+      "id": "sports",
+      "name": "Deportes",
+      "icon_emoji": "⚽",
+      "is_premium": false,
+      "sort_order": 3
+    },
+    {
+      "id": "places",
+      "name": "Países y Ciudades",
+      "icon_emoji": "🌍",
+      "is_premium": false,
+      "sort_order": 4
+    },
+    {
+      "id": "movies",
+      "name": "Cine y TV",
+      "icon_emoji": "🎬",
+      "is_premium": false,
+      "sort_order": 5
+    },
+    {
+      "id": "music",
+      "name": "Música",
+      "icon_emoji": "🎵",
+      "is_premium": false,
+      "sort_order": 6
+    },
+    {
+      "id": "science",
+      "name": "Ciencia y Tecnología",
+      "icon_emoji": "🧪",
+      "is_premium": true,
+      "sort_order": 7
+    },
+    {
+      "id": "emotions",
+      "name": "Emociones",
+      "icon_emoji": "🎭",
+      "is_premium": true,
+      "sort_order": 8
+    }
+  ],
+  "words": [
+    {
+      "text": "Perro",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Gato",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "León",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Águila",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Tiburón",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Elefante",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Serpiente",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Caballo",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Oso",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Mono",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Conejo",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Ballena",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Pingüino",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Tortuga",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Loro",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Araña",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Mariposa",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Ciervo",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Ratón",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Jirafa",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Lobo",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Zorro",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Pantera",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Lince",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Tigre",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Puma",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Leopardo",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Halcón",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Búho",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Cóndor",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Delfín",
+      "category": "Animales",
+      "difficulty": 5
+    },
+    {
+      "text": "Orca",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Rinoceronte",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Hipopótamo",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Mamut",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Lagarto",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Cocodrilo",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Iguana",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Burro",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Cebra",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Poni",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Panda",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Koala",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Mapache",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Gorila",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Chimpancé",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Orangután",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Liebre",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Hámster",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Foca",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Gaviota",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Albatros",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Caracol",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Cangrejo",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Tucán",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Guacamayo",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Canario",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Escorpión",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Hormiga",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Escarabajo",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Libélula",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Abeja",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Polilla",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Alce",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Reno",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Gacela",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Rata",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Ardilla",
+      "category": "Animales",
+      "difficulty": 4
+    },
+    {
+      "text": "Avestruz",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Camello",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Llama",
+      "category": "Animales",
+      "difficulty": 3
+    },
+    {
+      "text": "Morsa",
+      "category": "Animales",
+      "difficulty": 2
+    },
+    {
+      "text": "Pizza",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Hamburguesa",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Sushi",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Paella",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Chocolate",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Café",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Cerveza",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Helado",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Tortilla",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Croissant",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Taco",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Pasta",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Ensalada",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Manzana",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Queso",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Pan",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Limonada",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Fresa",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Pollo",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Sopa",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Calzone",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Focaccia",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Empanada",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Hot Dog",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Sándwich",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Kebab",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Sashimi",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Tempura",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Ramen",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Risotto",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Arroz frito",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Fideuá",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Cacao",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Brownie",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Turrón",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Té",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Capuchino",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Espresso",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Sidra",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Vino",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Sorbete",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Granizado",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Natillas",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Omelette",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Frittata",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Revuelto",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Donut",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Magdalena",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Churro",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Burrito",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Quesadilla",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Enchilada",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Fideos",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Lasaña",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Macarrones",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Gazpacho",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Ceviche",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Carpaccio",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Pera",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Melocotón",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Ciruela",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Mantequilla",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Yogur",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Nata",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Galleta",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Tostada",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Arepa",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Naranjada",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Zumo",
+      "category": "Comida y Bebida",
+      "difficulty": 5
+    },
+    {
+      "text": "Horchata",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Frambuesa",
+      "category": "Comida y Bebida",
+      "difficulty": 3
+    },
+    {
+      "text": "Cereza",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Mora",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Pavo",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Pato",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Codorniz",
+      "category": "Comida y Bebida",
+      "difficulty": 2
+    },
+    {
+      "text": "Caldo",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Crema",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Guiso",
+      "category": "Comida y Bebida",
+      "difficulty": 4
+    },
+    {
+      "text": "Fútbol",
+      "category": "Deportes",
+      "difficulty": 5
+    },
+    {
+      "text": "Baloncesto",
+      "category": "Deportes",
+      "difficulty": 5
+    },
+    {
+      "text": "Tenis",
+      "category": "Deportes",
+      "difficulty": 5
+    },
+    {
+      "text": "Natación",
+      "category": "Deportes",
+      "difficulty": 5
+    },
+    {
+      "text": "Ciclismo",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Boxeo",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Golf",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Atletismo",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Esquí",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Surf",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Béisbol",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Escalada",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Gimnasia",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Esgrima",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Ajedrez",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Fórmula 1",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Skate",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Polo",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Rugby",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Vela",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Fútbol sala",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Hockey",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Voleibol",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Balonmano",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Netball",
+      "category": "Deportes",
+      "difficulty": 1
+    },
+    {
+      "text": "Bádminton",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Pádel",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Ping-pong",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Waterpolo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Buceo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Patinaje",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Monopatín",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "BMX",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Karate",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Judo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Lucha libre",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Billar",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Croquet",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Bolos",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Maratón",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Triatlón",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Cross",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Snowboard",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Patinaje hielo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Trineo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Windsurf",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Kayak",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Bodyboard",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Softball",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Cricket",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Rounders",
+      "category": "Deportes",
+      "difficulty": 1
+    },
+    {
+      "text": "Senderismo",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Rappel",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Espeleología",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Yoga",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Pilates",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Danza",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Tiro con arco",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Lanzamiento",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Jabalina",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Damas",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Go",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Backgammon",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Rally",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "NASCAR",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "MotoGP",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Scooter",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Roller",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Longboard",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Equitación",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Hípica",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Rodeo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Fútbol americano",
+      "category": "Deportes",
+      "difficulty": 4
+    },
+    {
+      "text": "Lacrosse",
+      "category": "Deportes",
+      "difficulty": 2
+    },
+    {
+      "text": "Hurling",
+      "category": "Deportes",
+      "difficulty": 1
+    },
+    {
+      "text": "Remo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Piragüismo",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "Canoa",
+      "category": "Deportes",
+      "difficulty": 3
+    },
+    {
+      "text": "París",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Tokio",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Nueva York",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "España",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Brasil",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Egipto",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Australia",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Moscú",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Amazonas",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Sahara",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Alpes",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Hawái",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Venecia",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Cuba",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "India",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Roma",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Dubái",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Japón",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Alaska",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Hollywood",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Londres",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Berlín",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Seúl",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Pekín",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Osaka",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Chicago",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Los Ángeles",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Toronto",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Portugal",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Italia",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Francia",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Argentina",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Colombia",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "México",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Marruecos",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Turquía",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Grecia",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Nueva Zelanda",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Canadá",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Sudáfrica",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "San Petersburgo",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Varsovia",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Praga",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Nilo",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Misisipi",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Ganges",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Gobi",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Atacama",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Kalahari",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Andes",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Himalaya",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Pirineos",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Bali",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Maldivas",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Canarias",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Ámsterdam",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Brujas",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Estocolmo",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Jamaica",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Puerto Rico",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Bahamas",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Pakistán",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Bangladesh",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Sri Lanka",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Atenas",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Estambul",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "El Cairo",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Abu Dabi",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Doha",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Riad",
+      "category": "Países y Ciudades",
+      "difficulty": 2
+    },
+    {
+      "text": "Corea del Sur",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "China",
+      "category": "Países y Ciudades",
+      "difficulty": 5
+    },
+    {
+      "text": "Taiwán",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Siberia",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Groenlandia",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Islandia",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Bollywood",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Broadway",
+      "category": "Países y Ciudades",
+      "difficulty": 3
+    },
+    {
+      "text": "Las Vegas",
+      "category": "Países y Ciudades",
+      "difficulty": 4
+    },
+    {
+      "text": "Star Wars",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Harry Potter",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Batman",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Titanic",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Matrix",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Toy Story",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Jurassic Park",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "El Rey León",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Piratas del Caribe",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Indiana Jones",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Frozen",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Avatar",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Rocky",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "James Bond",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Stranger Things",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Friends",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Breaking Bad",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Bob Esponja",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Gladiator",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Coco",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Star Trek",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Guardians",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Dune",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Narnia",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Señor Anillos",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Percy Jackson",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Spider-Man",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Iron Man",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Superman",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Pearl Harbor",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Poseidón",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Naufrago",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Tron",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Inception",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Blade Runner",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Shrek",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Buscando a Nemo",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Monsters Inc",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "King Kong",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Godzilla",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Rampage",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Bambi",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "El Libro de la Selva",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Madagascar",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Peter Pan",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Moby Dick",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "La Sirenita",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Lara Croft",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "La Momia",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Uncharted",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Enredados",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Brave",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Moana",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Interstellar",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Gravity",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Prometheus",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Karate Kid",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Creed",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Raging Bull",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Mission Impossible",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Jason Bourne",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Kingsman",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Dark",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "The OA",
+      "category": "Cine y TV",
+      "difficulty": 2
+    },
+    {
+      "text": "Black Mirror",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Seinfeld",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "How I Met",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "The Big Bang",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Narcos",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Ozark",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Better Call Saul",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Doraemon",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Los Simpson",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Futurama",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Troya",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "Espartaco",
+      "category": "Cine y TV",
+      "difficulty": 3
+    },
+    {
+      "text": "300",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Soul",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Inside Out",
+      "category": "Cine y TV",
+      "difficulty": 4
+    },
+    {
+      "text": "Up",
+      "category": "Cine y TV",
+      "difficulty": 5
+    },
+    {
+      "text": "Guitarra",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Piano",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Batería",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Violín",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Flauta",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Trompeta",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Rock",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Reggaetón",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Jazz",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Rap",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Ópera",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "DJ",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Concierto",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Salsa",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "K-pop",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Arpa",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Saxofón",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Flamenco",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Sintetizador",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Karaoke",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Ukulele",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Bajo",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Banjo",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Órgano",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Teclado",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Clavecín",
+      "category": "Música",
+      "difficulty": 1
+    },
+    {
+      "text": "Bongos",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Tambor",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Cajón",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Viola",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Violonchelo",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Contrabajo",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Clarinete",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Oboe",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Piccolo",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Trombón",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Tuba",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Corneta",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Punk",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Metal",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Grunge",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Trap",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Dancehall",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Dembow",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Blues",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Swing",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Bossa nova",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Hip-hop",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Spoken word",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Musical",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Zarzuela",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Cabaret",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Productor",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "MC",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "VJ",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Festival",
+      "category": "Música",
+      "difficulty": 5
+    },
+    {
+      "text": "Recital",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Gira",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Bachata",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Merengue",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Cumbia",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "J-pop",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "C-pop",
+      "category": "Música",
+      "difficulty": 1
+    },
+    {
+      "text": "Eurovisión",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Lira",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Cítara",
+      "category": "Música",
+      "difficulty": 1
+    },
+    {
+      "text": "Laúd",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Fagot",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Armónica",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Tango",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Samba",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Bolero",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Máquina de ritmos",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Theremin",
+      "category": "Música",
+      "difficulty": 1
+    },
+    {
+      "text": "Sampler",
+      "category": "Música",
+      "difficulty": 2
+    },
+    {
+      "text": "Coro",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Playback",
+      "category": "Música",
+      "difficulty": 3
+    },
+    {
+      "text": "Dúo",
+      "category": "Música",
+      "difficulty": 4
+    },
+    {
+      "text": "Robot",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Telescopio",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "ADN",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Átomo",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Internet",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 5
+    },
+    {
+      "text": "Cohete",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Dinosaurio",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 5
+    },
+    {
+      "text": "Volcán",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Gravedad",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Láser",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Vacuna",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Algoritmo",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Galaxia",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Célula",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Reactor nuclear",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Inteligencia artificial",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Agujero negro",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Impresora 3D",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Clon",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Realidad virtual",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Androide",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Dron",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Cyborg",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Microscopio",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Prismáticos",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Lupa",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "ARN",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Gen",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Cromosoma",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Molécula",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Electrón",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Protón",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Intranet",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "WiFi",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 5
+    },
+    {
+      "text": "Bluetooth",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Satélite",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Transbordador",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Nave",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Fósil",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Meteorito",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Géiser",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Terremoto",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Tsunami",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Magnetismo",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Inercia",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Fricción",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Radar",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Sonar",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Rayos X",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Antibiótico",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Antídoto",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Suero",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Ecuación",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Fórmula",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Código",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 5
+    },
+    {
+      "text": "Nebulosa",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Constelación",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Supernova",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Bacteria",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Virus",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 5
+    },
+    {
+      "text": "Ameba",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Central eólica",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Placa solar",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Presa",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Machine learning",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Chatbot",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Red neuronal",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Estrella",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "Quásar",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 1
+    },
+    {
+      "text": "Púlsar",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 1
+    },
+    {
+      "text": "Escáner",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 4
+    },
+    {
+      "text": "CNC",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 1
+    },
+    {
+      "text": "Cortadora láser",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Mutante",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Híbrido",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Transgénico",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 2
+    },
+    {
+      "text": "Realidad aumentada",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Metaverso",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Simulador",
+      "category": "Ciencia y Tecnología",
+      "difficulty": 3
+    },
+    {
+      "text": "Alegría",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Tristeza",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Miedo",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Amor",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Rabia",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Sorpresa",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Envidia",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Orgullo",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Vergüenza",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Esperanza",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Aburrimiento",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Gratitud",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Soledad",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Valentía",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Culpa",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Paz",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Estrés",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Curiosidad",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Desprecio",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Éxtasis",
+      "category": "Emociones",
+      "difficulty": 2
+    },
+    {
+      "text": "Euforia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Felicidad",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Entusiasmo",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Melancolía",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Nostalgia",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Pena",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Pánico",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Terror",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Ansiedad",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Cariño",
+      "category": "Emociones",
+      "difficulty": 5
+    },
+    {
+      "text": "Pasión",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Ternura",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Furia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Ira",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Frustración",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Asombro",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Estupor",
+      "category": "Emociones",
+      "difficulty": 2
+    },
+    {
+      "text": "Incredulidad",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Celos",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Codicia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Rivalidad",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Vanidad",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Soberbia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Dignidad",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Timidez",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Pudor",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Humillación",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Ilusión",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Fe",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Optimismo",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Indiferencia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Apatía",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Desgana",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Admiración",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Respeto",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Devoción",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Aislamiento",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Abandono",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Vacío",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Coraje",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Arrojo",
+      "category": "Emociones",
+      "difficulty": 2
+    },
+    {
+      "text": "Osadía",
+      "category": "Emociones",
+      "difficulty": 2
+    },
+    {
+      "text": "Remordimiento",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Arrepentimiento",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Pesar",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Serenidad",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Calma",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Tranquilidad",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Presión",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Tensión",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Agobio",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Intriga",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Interés",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Fascinación",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Desdén",
+      "category": "Emociones",
+      "difficulty": 2
+    },
+    {
+      "text": "Rechazo",
+      "category": "Emociones",
+      "difficulty": 4
+    },
+    {
+      "text": "Intolerancia",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Dicha",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Gozo",
+      "category": "Emociones",
+      "difficulty": 3
+    },
+    {
+      "text": "Plenitud",
+      "category": "Emociones",
+      "difficulty": 3
+    }
+  ],
+  "semantic_pairs": [
+    {
+      "word_a": "Perro",
+      "word_b": "Lobo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Perro",
+      "word_b": "Gato",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Perro",
+      "word_b": "Zorro",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gato",
+      "word_b": "Pantera",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gato",
+      "word_b": "Lince",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gato",
+      "word_b": "Tigre",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "León",
+      "word_b": "Tigre",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "León",
+      "word_b": "Puma",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "León",
+      "word_b": "Leopardo",
+      "similarity": 0.87,
+      "tier": "A"
+    },
+    {
+      "word_a": "Águila",
+      "word_b": "Halcón",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Águila",
+      "word_b": "Búho",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Águila",
+      "word_b": "Cóndor",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tiburón",
+      "word_b": "Delfín",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tiburón",
+      "word_b": "Orca",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tiburón",
+      "word_b": "Ballena",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Elefante",
+      "word_b": "Rinoceronte",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Elefante",
+      "word_b": "Hipopótamo",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Elefante",
+      "word_b": "Mamut",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Serpiente",
+      "word_b": "Lagarto",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Serpiente",
+      "word_b": "Cocodrilo",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Serpiente",
+      "word_b": "Iguana",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Caballo",
+      "word_b": "Burro",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Caballo",
+      "word_b": "Cebra",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Caballo",
+      "word_b": "Poni",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Oso",
+      "word_b": "Panda",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Oso",
+      "word_b": "Koala",
+      "similarity": 0.6,
+      "tier": "C"
+    },
+    {
+      "word_a": "Oso",
+      "word_b": "Mapache",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Mono",
+      "word_b": "Gorila",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Mono",
+      "word_b": "Chimpancé",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Mono",
+      "word_b": "Orangután",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Conejo",
+      "word_b": "Liebre",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Conejo",
+      "word_b": "Hámster",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Conejo",
+      "word_b": "Ratón",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ballena",
+      "word_b": "Delfín",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ballena",
+      "word_b": "Foca",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ballena",
+      "word_b": "Morsa",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Pingüino",
+      "word_b": "Foca",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Pingüino",
+      "word_b": "Gaviota",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Pingüino",
+      "word_b": "Albatros",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Tortuga",
+      "word_b": "Caracol",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Tortuga",
+      "word_b": "Cangrejo",
+      "similarity": 0.58,
+      "tier": "C"
+    },
+    {
+      "word_a": "Tortuga",
+      "word_b": "Lagarto",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Loro",
+      "word_b": "Tucán",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Loro",
+      "word_b": "Guacamayo",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Loro",
+      "word_b": "Canario",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Araña",
+      "word_b": "Escorpión",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Araña",
+      "word_b": "Hormiga",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Araña",
+      "word_b": "Escarabajo",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Mariposa",
+      "word_b": "Libélula",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Mariposa",
+      "word_b": "Abeja",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Mariposa",
+      "word_b": "Polilla",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ciervo",
+      "word_b": "Alce",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ciervo",
+      "word_b": "Reno",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ciervo",
+      "word_b": "Gacela",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ratón",
+      "word_b": "Rata",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ratón",
+      "word_b": "Hámster",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ratón",
+      "word_b": "Ardilla",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Jirafa",
+      "word_b": "Avestruz",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Jirafa",
+      "word_b": "Camello",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Jirafa",
+      "word_b": "Llama",
+      "similarity": 0.58,
+      "tier": "C"
+    },
+    {
+      "word_a": "Pizza",
+      "word_b": "Calzone",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pizza",
+      "word_b": "Focaccia",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Pizza",
+      "word_b": "Empanada",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Hamburguesa",
+      "word_b": "Hot Dog",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Hamburguesa",
+      "word_b": "Sándwich",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Hamburguesa",
+      "word_b": "Kebab",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Sushi",
+      "word_b": "Sashimi",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sushi",
+      "word_b": "Tempura",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sushi",
+      "word_b": "Ramen",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Paella",
+      "word_b": "Risotto",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Paella",
+      "word_b": "Arroz frito",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Paella",
+      "word_b": "Fideuá",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Chocolate",
+      "word_b": "Cacao",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Chocolate",
+      "word_b": "Brownie",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Chocolate",
+      "word_b": "Turrón",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Café",
+      "word_b": "Té",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Café",
+      "word_b": "Capuchino",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Café",
+      "word_b": "Espresso",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Cerveza",
+      "word_b": "Sidra",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Cerveza",
+      "word_b": "Vino",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Cerveza",
+      "word_b": "Limonada",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Helado",
+      "word_b": "Sorbete",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Helado",
+      "word_b": "Granizado",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Helado",
+      "word_b": "Natillas",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Tortilla",
+      "word_b": "Omelette",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Tortilla",
+      "word_b": "Frittata",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Tortilla",
+      "word_b": "Revuelto",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Croissant",
+      "word_b": "Donut",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Croissant",
+      "word_b": "Magdalena",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Croissant",
+      "word_b": "Churro",
+      "similarity": 0.7,
+      "tier": "B"
+    },
+    {
+      "word_a": "Taco",
+      "word_b": "Burrito",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Taco",
+      "word_b": "Quesadilla",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Taco",
+      "word_b": "Enchilada",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pasta",
+      "word_b": "Fideos",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pasta",
+      "word_b": "Lasaña",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pasta",
+      "word_b": "Macarrones",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ensalada",
+      "word_b": "Gazpacho",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ensalada",
+      "word_b": "Ceviche",
+      "similarity": 0.58,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ensalada",
+      "word_b": "Carpaccio",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Manzana",
+      "word_b": "Pera",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Manzana",
+      "word_b": "Melocotón",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Manzana",
+      "word_b": "Ciruela",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Queso",
+      "word_b": "Mantequilla",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Queso",
+      "word_b": "Yogur",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Queso",
+      "word_b": "Nata",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Pan",
+      "word_b": "Galleta",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Pan",
+      "word_b": "Tostada",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pan",
+      "word_b": "Arepa",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Limonada",
+      "word_b": "Naranjada",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Limonada",
+      "word_b": "Zumo",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Limonada",
+      "word_b": "Horchata",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Fresa",
+      "word_b": "Frambuesa",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Fresa",
+      "word_b": "Cereza",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Fresa",
+      "word_b": "Mora",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pollo",
+      "word_b": "Pavo",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Pollo",
+      "word_b": "Pato",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Pollo",
+      "word_b": "Codorniz",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sopa",
+      "word_b": "Caldo",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sopa",
+      "word_b": "Crema",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sopa",
+      "word_b": "Guiso",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Fútbol",
+      "word_b": "Rugby",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Fútbol",
+      "word_b": "Fútbol sala",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Fútbol",
+      "word_b": "Hockey",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Baloncesto",
+      "word_b": "Voleibol",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Baloncesto",
+      "word_b": "Balonmano",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Baloncesto",
+      "word_b": "Netball",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tenis",
+      "word_b": "Bádminton",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tenis",
+      "word_b": "Pádel",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Tenis",
+      "word_b": "Ping-pong",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Natación",
+      "word_b": "Waterpolo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Natación",
+      "word_b": "Buceo",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Natación",
+      "word_b": "Surf",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ciclismo",
+      "word_b": "Patinaje",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ciclismo",
+      "word_b": "Monopatín",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ciclismo",
+      "word_b": "BMX",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Boxeo",
+      "word_b": "Karate",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Boxeo",
+      "word_b": "Judo",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Boxeo",
+      "word_b": "Lucha libre",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Golf",
+      "word_b": "Billar",
+      "similarity": 0.58,
+      "tier": "C"
+    },
+    {
+      "word_a": "Golf",
+      "word_b": "Croquet",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Golf",
+      "word_b": "Bolos",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Atletismo",
+      "word_b": "Maratón",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Atletismo",
+      "word_b": "Triatlón",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Atletismo",
+      "word_b": "Cross",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Esquí",
+      "word_b": "Snowboard",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Esquí",
+      "word_b": "Patinaje hielo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Esquí",
+      "word_b": "Trineo",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Surf",
+      "word_b": "Windsurf",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Surf",
+      "word_b": "Kayak",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Surf",
+      "word_b": "Bodyboard",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Béisbol",
+      "word_b": "Softball",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Béisbol",
+      "word_b": "Cricket",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Béisbol",
+      "word_b": "Rounders",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Escalada",
+      "word_b": "Senderismo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Escalada",
+      "word_b": "Rappel",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Escalada",
+      "word_b": "Espeleología",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gimnasia",
+      "word_b": "Yoga",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gimnasia",
+      "word_b": "Pilates",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gimnasia",
+      "word_b": "Danza",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Esgrima",
+      "word_b": "Tiro con arco",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Esgrima",
+      "word_b": "Lanzamiento",
+      "similarity": 0.58,
+      "tier": "C"
+    },
+    {
+      "word_a": "Esgrima",
+      "word_b": "Jabalina",
+      "similarity": 0.55,
+      "tier": "C"
+    },
+    {
+      "word_a": "Ajedrez",
+      "word_b": "Damas",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ajedrez",
+      "word_b": "Go",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ajedrez",
+      "word_b": "Backgammon",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Fórmula 1",
+      "word_b": "Rally",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Fórmula 1",
+      "word_b": "NASCAR",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Fórmula 1",
+      "word_b": "MotoGP",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Skate",
+      "word_b": "Scooter",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Skate",
+      "word_b": "Roller",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Skate",
+      "word_b": "Longboard",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Polo",
+      "word_b": "Equitación",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Polo",
+      "word_b": "Hípica",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Polo",
+      "word_b": "Rodeo",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Rugby",
+      "word_b": "Fútbol americano",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rugby",
+      "word_b": "Lacrosse",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Rugby",
+      "word_b": "Hurling",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Vela",
+      "word_b": "Remo",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vela",
+      "word_b": "Piragüismo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vela",
+      "word_b": "Canoa",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "París",
+      "word_b": "Londres",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "París",
+      "word_b": "Roma",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "París",
+      "word_b": "Berlín",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tokio",
+      "word_b": "Seúl",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tokio",
+      "word_b": "Pekín",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tokio",
+      "word_b": "Osaka",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Nueva York",
+      "word_b": "Chicago",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Nueva York",
+      "word_b": "Los Ángeles",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Nueva York",
+      "word_b": "Toronto",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "España",
+      "word_b": "Portugal",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "España",
+      "word_b": "Italia",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "España",
+      "word_b": "Francia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Brasil",
+      "word_b": "Argentina",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Brasil",
+      "word_b": "Colombia",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Brasil",
+      "word_b": "México",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Egipto",
+      "word_b": "Marruecos",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Egipto",
+      "word_b": "Turquía",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Egipto",
+      "word_b": "Grecia",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Australia",
+      "word_b": "Nueva Zelanda",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Australia",
+      "word_b": "Canadá",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Australia",
+      "word_b": "Sudáfrica",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Moscú",
+      "word_b": "San Petersburgo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Moscú",
+      "word_b": "Varsovia",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Moscú",
+      "word_b": "Praga",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Amazonas",
+      "word_b": "Nilo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Amazonas",
+      "word_b": "Misisipi",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Amazonas",
+      "word_b": "Ganges",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sahara",
+      "word_b": "Gobi",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sahara",
+      "word_b": "Atacama",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sahara",
+      "word_b": "Kalahari",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alpes",
+      "word_b": "Andes",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alpes",
+      "word_b": "Himalaya",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alpes",
+      "word_b": "Pirineos",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Hawái",
+      "word_b": "Bali",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Hawái",
+      "word_b": "Maldivas",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Hawái",
+      "word_b": "Canarias",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Venecia",
+      "word_b": "Ámsterdam",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Venecia",
+      "word_b": "Brujas",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Venecia",
+      "word_b": "Estocolmo",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Cuba",
+      "word_b": "Jamaica",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Cuba",
+      "word_b": "Puerto Rico",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Cuba",
+      "word_b": "Bahamas",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "India",
+      "word_b": "Pakistán",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "India",
+      "word_b": "Bangladesh",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "India",
+      "word_b": "Sri Lanka",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Roma",
+      "word_b": "Atenas",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Roma",
+      "word_b": "Estambul",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Roma",
+      "word_b": "El Cairo",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Dubái",
+      "word_b": "Abu Dabi",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Dubái",
+      "word_b": "Doha",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Dubái",
+      "word_b": "Riad",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Japón",
+      "word_b": "Corea del Sur",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Japón",
+      "word_b": "China",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Japón",
+      "word_b": "Taiwán",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Alaska",
+      "word_b": "Siberia",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alaska",
+      "word_b": "Groenlandia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Alaska",
+      "word_b": "Islandia",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Hollywood",
+      "word_b": "Bollywood",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Hollywood",
+      "word_b": "Broadway",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Hollywood",
+      "word_b": "Las Vegas",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Star Wars",
+      "word_b": "Star Trek",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Star Wars",
+      "word_b": "Guardians",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Star Wars",
+      "word_b": "Dune",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Harry Potter",
+      "word_b": "Narnia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Harry Potter",
+      "word_b": "Señor Anillos",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Harry Potter",
+      "word_b": "Percy Jackson",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Batman",
+      "word_b": "Spider-Man",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Batman",
+      "word_b": "Iron Man",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Batman",
+      "word_b": "Superman",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Titanic",
+      "word_b": "Pearl Harbor",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Titanic",
+      "word_b": "Poseidón",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Titanic",
+      "word_b": "Naufrago",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Matrix",
+      "word_b": "Tron",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Matrix",
+      "word_b": "Inception",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Matrix",
+      "word_b": "Blade Runner",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Toy Story",
+      "word_b": "Shrek",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Toy Story",
+      "word_b": "Buscando a Nemo",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Toy Story",
+      "word_b": "Monsters Inc",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Jurassic Park",
+      "word_b": "King Kong",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Jurassic Park",
+      "word_b": "Godzilla",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Jurassic Park",
+      "word_b": "Rampage",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "El Rey León",
+      "word_b": "Bambi",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "El Rey León",
+      "word_b": "El Libro de la Selva",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "El Rey León",
+      "word_b": "Madagascar",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Piratas del Caribe",
+      "word_b": "Peter Pan",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Piratas del Caribe",
+      "word_b": "Moby Dick",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Piratas del Caribe",
+      "word_b": "La Sirenita",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Indiana Jones",
+      "word_b": "Lara Croft",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Indiana Jones",
+      "word_b": "La Momia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Indiana Jones",
+      "word_b": "Uncharted",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Frozen",
+      "word_b": "Enredados",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Frozen",
+      "word_b": "Brave",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Frozen",
+      "word_b": "Moana",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Avatar",
+      "word_b": "Interstellar",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Avatar",
+      "word_b": "Gravity",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Avatar",
+      "word_b": "Prometheus",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Rocky",
+      "word_b": "Karate Kid",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Rocky",
+      "word_b": "Creed",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rocky",
+      "word_b": "Raging Bull",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "James Bond",
+      "word_b": "Mission Impossible",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "James Bond",
+      "word_b": "Jason Bourne",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "James Bond",
+      "word_b": "Kingsman",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Stranger Things",
+      "word_b": "Dark",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Stranger Things",
+      "word_b": "The OA",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Stranger Things",
+      "word_b": "Black Mirror",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Friends",
+      "word_b": "Seinfeld",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Friends",
+      "word_b": "How I Met",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Friends",
+      "word_b": "The Big Bang",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Breaking Bad",
+      "word_b": "Narcos",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Breaking Bad",
+      "word_b": "Ozark",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Breaking Bad",
+      "word_b": "Better Call Saul",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Bob Esponja",
+      "word_b": "Doraemon",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Bob Esponja",
+      "word_b": "Los Simpson",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Bob Esponja",
+      "word_b": "Futurama",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gladiator",
+      "word_b": "Troya",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Gladiator",
+      "word_b": "Espartaco",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Gladiator",
+      "word_b": "300",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Coco",
+      "word_b": "Soul",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Coco",
+      "word_b": "Inside Out",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Coco",
+      "word_b": "Up",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Guitarra",
+      "word_b": "Ukulele",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Guitarra",
+      "word_b": "Bajo",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Guitarra",
+      "word_b": "Banjo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Piano",
+      "word_b": "Órgano",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Piano",
+      "word_b": "Teclado",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Piano",
+      "word_b": "Clavecín",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Batería",
+      "word_b": "Bongos",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Batería",
+      "word_b": "Tambor",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Batería",
+      "word_b": "Cajón",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Violín",
+      "word_b": "Viola",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Violín",
+      "word_b": "Violonchelo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Violín",
+      "word_b": "Contrabajo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Flauta",
+      "word_b": "Clarinete",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Flauta",
+      "word_b": "Oboe",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Flauta",
+      "word_b": "Piccolo",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Trompeta",
+      "word_b": "Trombón",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Trompeta",
+      "word_b": "Tuba",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Trompeta",
+      "word_b": "Corneta",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rock",
+      "word_b": "Punk",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rock",
+      "word_b": "Metal",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rock",
+      "word_b": "Grunge",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Reggaetón",
+      "word_b": "Trap",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Reggaetón",
+      "word_b": "Dancehall",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Reggaetón",
+      "word_b": "Dembow",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Jazz",
+      "word_b": "Blues",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Jazz",
+      "word_b": "Swing",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Jazz",
+      "word_b": "Bossa nova",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Rap",
+      "word_b": "Hip-hop",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rap",
+      "word_b": "Trap",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Rap",
+      "word_b": "Spoken word",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ópera",
+      "word_b": "Musical",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Ópera",
+      "word_b": "Zarzuela",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Ópera",
+      "word_b": "Cabaret",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "DJ",
+      "word_b": "Productor",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "DJ",
+      "word_b": "MC",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "DJ",
+      "word_b": "VJ",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Concierto",
+      "word_b": "Festival",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Concierto",
+      "word_b": "Recital",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Concierto",
+      "word_b": "Gira",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Salsa",
+      "word_b": "Bachata",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Salsa",
+      "word_b": "Merengue",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Salsa",
+      "word_b": "Cumbia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "K-pop",
+      "word_b": "J-pop",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "K-pop",
+      "word_b": "C-pop",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "K-pop",
+      "word_b": "Eurovisión",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Arpa",
+      "word_b": "Lira",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Arpa",
+      "word_b": "Cítara",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Arpa",
+      "word_b": "Laúd",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Saxofón",
+      "word_b": "Clarinete",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Saxofón",
+      "word_b": "Fagot",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Saxofón",
+      "word_b": "Armónica",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Flamenco",
+      "word_b": "Tango",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Flamenco",
+      "word_b": "Samba",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Flamenco",
+      "word_b": "Bolero",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sintetizador",
+      "word_b": "Máquina de ritmos",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sintetizador",
+      "word_b": "Theremin",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sintetizador",
+      "word_b": "Sampler",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Karaoke",
+      "word_b": "Coro",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Karaoke",
+      "word_b": "Playback",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Karaoke",
+      "word_b": "Dúo",
+      "similarity": 0.65,
+      "tier": "C"
+    },
+    {
+      "word_a": "Robot",
+      "word_b": "Androide",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Robot",
+      "word_b": "Dron",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Robot",
+      "word_b": "Cyborg",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Telescopio",
+      "word_b": "Microscopio",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Telescopio",
+      "word_b": "Prismáticos",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Telescopio",
+      "word_b": "Lupa",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "ADN",
+      "word_b": "ARN",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "ADN",
+      "word_b": "Gen",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "ADN",
+      "word_b": "Cromosoma",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Átomo",
+      "word_b": "Molécula",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Átomo",
+      "word_b": "Electrón",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Átomo",
+      "word_b": "Protón",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Internet",
+      "word_b": "Intranet",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Internet",
+      "word_b": "WiFi",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Internet",
+      "word_b": "Bluetooth",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Cohete",
+      "word_b": "Satélite",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Cohete",
+      "word_b": "Transbordador",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Cohete",
+      "word_b": "Nave",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Dinosaurio",
+      "word_b": "Mamut",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Dinosaurio",
+      "word_b": "Fósil",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Dinosaurio",
+      "word_b": "Meteorito",
+      "similarity": 0.62,
+      "tier": "C"
+    },
+    {
+      "word_a": "Volcán",
+      "word_b": "Géiser",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Volcán",
+      "word_b": "Terremoto",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Volcán",
+      "word_b": "Tsunami",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gravedad",
+      "word_b": "Magnetismo",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gravedad",
+      "word_b": "Inercia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gravedad",
+      "word_b": "Fricción",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Láser",
+      "word_b": "Radar",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Láser",
+      "word_b": "Sonar",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Láser",
+      "word_b": "Rayos X",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vacuna",
+      "word_b": "Antibiótico",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vacuna",
+      "word_b": "Antídoto",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vacuna",
+      "word_b": "Suero",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Algoritmo",
+      "word_b": "Ecuación",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Algoritmo",
+      "word_b": "Fórmula",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Algoritmo",
+      "word_b": "Código",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Galaxia",
+      "word_b": "Nebulosa",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Galaxia",
+      "word_b": "Constelación",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Galaxia",
+      "word_b": "Supernova",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Célula",
+      "word_b": "Bacteria",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Célula",
+      "word_b": "Virus",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Célula",
+      "word_b": "Ameba",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Reactor nuclear",
+      "word_b": "Central eólica",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Reactor nuclear",
+      "word_b": "Placa solar",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Reactor nuclear",
+      "word_b": "Presa",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Inteligencia artificial",
+      "word_b": "Machine learning",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Inteligencia artificial",
+      "word_b": "Chatbot",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Inteligencia artificial",
+      "word_b": "Red neuronal",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Agujero negro",
+      "word_b": "Estrella",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Agujero negro",
+      "word_b": "Quásar",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Agujero negro",
+      "word_b": "Púlsar",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Impresora 3D",
+      "word_b": "Escáner",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Impresora 3D",
+      "word_b": "CNC",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Impresora 3D",
+      "word_b": "Cortadora láser",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Clon",
+      "word_b": "Mutante",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Clon",
+      "word_b": "Híbrido",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Clon",
+      "word_b": "Transgénico",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Realidad virtual",
+      "word_b": "Realidad aumentada",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Realidad virtual",
+      "word_b": "Metaverso",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Realidad virtual",
+      "word_b": "Simulador",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Alegría",
+      "word_b": "Euforia",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alegría",
+      "word_b": "Felicidad",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Alegría",
+      "word_b": "Entusiasmo",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tristeza",
+      "word_b": "Melancolía",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Tristeza",
+      "word_b": "Nostalgia",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Tristeza",
+      "word_b": "Pena",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Miedo",
+      "word_b": "Pánico",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Miedo",
+      "word_b": "Terror",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Miedo",
+      "word_b": "Ansiedad",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Amor",
+      "word_b": "Cariño",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Amor",
+      "word_b": "Pasión",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Amor",
+      "word_b": "Ternura",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rabia",
+      "word_b": "Furia",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rabia",
+      "word_b": "Ira",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Rabia",
+      "word_b": "Frustración",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sorpresa",
+      "word_b": "Asombro",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Sorpresa",
+      "word_b": "Estupor",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Sorpresa",
+      "word_b": "Incredulidad",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Envidia",
+      "word_b": "Celos",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Envidia",
+      "word_b": "Codicia",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Envidia",
+      "word_b": "Rivalidad",
+      "similarity": 0.68,
+      "tier": "C"
+    },
+    {
+      "word_a": "Orgullo",
+      "word_b": "Vanidad",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Orgullo",
+      "word_b": "Soberbia",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Orgullo",
+      "word_b": "Dignidad",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vergüenza",
+      "word_b": "Timidez",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Vergüenza",
+      "word_b": "Pudor",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Vergüenza",
+      "word_b": "Humillación",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Esperanza",
+      "word_b": "Ilusión",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Esperanza",
+      "word_b": "Fe",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Esperanza",
+      "word_b": "Optimismo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Aburrimiento",
+      "word_b": "Indiferencia",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Aburrimiento",
+      "word_b": "Apatía",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Aburrimiento",
+      "word_b": "Desgana",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gratitud",
+      "word_b": "Admiración",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gratitud",
+      "word_b": "Respeto",
+      "similarity": 0.75,
+      "tier": "B"
+    },
+    {
+      "word_a": "Gratitud",
+      "word_b": "Devoción",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Soledad",
+      "word_b": "Aislamiento",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Soledad",
+      "word_b": "Abandono",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Soledad",
+      "word_b": "Vacío",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Valentía",
+      "word_b": "Coraje",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Valentía",
+      "word_b": "Arrojo",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Valentía",
+      "word_b": "Osadía",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Culpa",
+      "word_b": "Remordimiento",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Culpa",
+      "word_b": "Arrepentimiento",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Culpa",
+      "word_b": "Pesar",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Paz",
+      "word_b": "Serenidad",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Paz",
+      "word_b": "Calma",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Paz",
+      "word_b": "Tranquilidad",
+      "similarity": 0.92,
+      "tier": "A"
+    },
+    {
+      "word_a": "Estrés",
+      "word_b": "Presión",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Estrés",
+      "word_b": "Tensión",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Estrés",
+      "word_b": "Agobio",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Curiosidad",
+      "word_b": "Intriga",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Curiosidad",
+      "word_b": "Interés",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Curiosidad",
+      "word_b": "Fascinación",
+      "similarity": 0.82,
+      "tier": "B"
+    },
+    {
+      "word_a": "Desprecio",
+      "word_b": "Desdén",
+      "similarity": 0.9,
+      "tier": "A"
+    },
+    {
+      "word_a": "Desprecio",
+      "word_b": "Rechazo",
+      "similarity": 0.78,
+      "tier": "B"
+    },
+    {
+      "word_a": "Desprecio",
+      "word_b": "Intolerancia",
+      "similarity": 0.72,
+      "tier": "B"
+    },
+    {
+      "word_a": "Éxtasis",
+      "word_b": "Dicha",
+      "similarity": 0.85,
+      "tier": "A"
+    },
+    {
+      "word_a": "Éxtasis",
+      "word_b": "Gozo",
+      "similarity": 0.88,
+      "tier": "A"
+    },
+    {
+      "word_a": "Éxtasis",
+      "word_b": "Plenitud",
+      "similarity": 0.82,
+      "tier": "B"
+    }
+  ]
+}
