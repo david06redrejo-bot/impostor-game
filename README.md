@@ -30,9 +30,8 @@
 
 ## Deployment (Netlify) 🚀
 
-This application is built to be a simple, static PWA-capable web app. To deploy:
+The game is live and automatically deployed via Netlify integration with GitHub.
 
-1.  Clone this repository.
-2.  Log in to [Netlify Drop](https://app.netlify.com/drop).
-3.  Drag and drop the `app/` directory into the browser.
-4.  Done! The game is now live and fully playable for anyone with the link.
+**Play now**: [https://impostorgame-1-2-3.netlify.app/](https://impostorgame-1-2-3.netlify.app/)
+
+The project includes a `netlify.toml` file which automatically sets the publishing directory to `app/`. Any pushes to the `main` branch will automatically trigger a new build and deploy the game.
