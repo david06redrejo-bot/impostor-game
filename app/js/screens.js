@@ -114,10 +114,21 @@ function stats() {
 }
 
 // ==================== CONFIG ====================
+function _getRoleSummary() {
+  const st = GameEngine.state;
+  if (st.randomRoles) return '🎲 Se asignarán al azar';
+  const parts = [];
+  if (st.numImpostors > 0) parts.push(`${st.numImpostors} impostor${st.numImpostors > 1 ? 'es' : ''}`);
+  if (st.numMisteriosos > 0) parts.push(`${st.numMisteriosos} misterioso${st.numMisteriosos > 1 ? 's' : ''}`);
+  const citizens = st.numPlayers - st.numImpostors - st.numMisteriosos;
+  parts.push(`${citizens} ciudadano${citizens !== 1 ? 's' : ''}`);
+  return parts.join(' · ');
+}
+
 function config() {
   const st = GameEngine.state;
   const cats = getCategories(false);
-  const impOpts = GameEngine.getImpostorOptions(st.numPlayers);
+  const randomOn = st.randomRoles;
 
   show(`
     <div class="screen" style="background:var(--bg-primary);justify-content:flex-start;padding-top:var(--space-xl)">
@@ -126,20 +137,37 @@ function config() {
         <span class="top-title">Nueva Partida</span><span class="top-spacer"></span>
       </div>
       <div class="scroll-content">
-        <h3 class="text-center mb-md">Modalidad</h3>
-        <div class="option-grid mb-lg" id="mode-grid">
-          <div class="option-card ${st.mode === 'impostor' ? 'selected' : ''}" onclick="Screens._selectMode('impostor')">
-            <div class="option-emoji">🕵️</div><div class="option-label">Impostor</div><div class="option-desc">Pantalla en blanco</div></div>
-          <div class="option-card ${st.mode === 'misterioso' ? 'selected' : ''}" onclick="Screens._selectMode('misterioso')">
-            <div class="option-emoji">🔮</div><div class="option-label">Misterioso</div><div class="option-desc">Palabra similar</div></div>
-        </div>
         <h3 class="text-center mb-md">Jugadores</h3>
         <div class="stepper mb-md">
           <button class="stepper-btn" onclick="Screens._adjPlayers(-1)">−</button>
           <span class="stepper-value" id="player-count">${st.numPlayers}</span>
           <button class="stepper-btn" onclick="Screens._adjPlayers(1)">+</button>
         </div>
-        <p class="text-muted text-center mb-lg" id="imp-info">${st.numImpostors} impostor(es) · ${st.numPlayers - st.numImpostors} ciudadano(s)${impOpts.options.length > 1 ? ' · Opciones: ' + impOpts.options.join('/') : ''}</p>
+
+        <h3 class="text-center mb-md">Roles</h3>
+        <div class="setting-row mb-md" style="justify-content:center;gap:var(--space-md)">
+          <span class="setting-label">🎲 Aleatorio</span>
+          <div class="toggle ${randomOn ? 'on' : ''}" onclick="Screens._toggleRandom(this)"><div class="toggle-knob"></div></div>
+        </div>
+
+        <div id="role-steppers" style="${randomOn ? 'display:none' : ''}">
+          <div class="stepper mb-sm">
+            <button class="stepper-btn" onclick="Screens._adjImpostors(-1)">−</button>
+            <span class="stepper-value">🕵️ <span id="imp-count">${st.numImpostors}</span></span>
+            <button class="stepper-btn" onclick="Screens._adjImpostors(1)">+</button>
+          </div>
+          <p class="text-muted text-center mb-md" style="font-size:var(--font-size-sm)">Impostores (pantalla en blanco)</p>
+
+          <div class="stepper mb-sm">
+            <button class="stepper-btn" onclick="Screens._adjMisteriosos(-1)">−</button>
+            <span class="stepper-value">🔮 <span id="mist-count">${st.numMisteriosos}</span></span>
+            <button class="stepper-btn" onclick="Screens._adjMisteriosos(1)">+</button>
+          </div>
+          <p class="text-muted text-center mb-md" style="font-size:var(--font-size-sm)">Misteriosos (palabra similar)</p>
+        </div>
+
+        <p class="text-center mb-lg" id="role-summary" style="font-weight:600;color:var(--text-secondary)">${_getRoleSummary()}</p>
+
         <h3 class="text-center mb-md">Categoría</h3>
         <div class="option-grid mb-lg" id="cat-grid">
           ${cats.map(c => `<div class="option-card ${st.categoryId === c.id ? 'selected' : ''}" onclick="Screens._selectCat('${c.id}')">
@@ -163,11 +191,45 @@ function config() {
   `);
 }
 
-function _selectMode(mode) {
-  GameEngine.setState({ mode });
+function _toggleRandom(el) {
   SoundSystem.onButtonPress();
-  document.querySelectorAll('#mode-grid .option-card').forEach(c => c.classList.remove('selected'));
-  event.currentTarget.classList.add('selected');
+  const val = !GameEngine.state.randomRoles;
+  GameEngine.setState({ randomRoles: val });
+  el.classList.toggle('on', val);
+  const steppers = document.getElementById('role-steppers');
+  if (steppers) steppers.style.display = val ? 'none' : '';
+  _updateRoleSummary();
+}
+
+function _adjImpostors(delta) {
+  SoundSystem.onButtonPress();
+  const st = GameEngine.state;
+  const maxAllowed = st.numPlayers - st.numMisteriosos - 1; // at least 1 citizen
+  const n = Math.max(0, Math.min(maxAllowed, st.numImpostors + delta));
+  // Enforce at least 1 total infiltrator
+  if (n + st.numMisteriosos < 1) return;
+  GameEngine.setState({ numImpostors: n });
+  const el = document.getElementById('imp-count');
+  if (el) el.textContent = n;
+  _updateRoleSummary();
+}
+
+function _adjMisteriosos(delta) {
+  SoundSystem.onButtonPress();
+  const st = GameEngine.state;
+  const maxAllowed = st.numPlayers - st.numImpostors - 1; // at least 1 citizen
+  const n = Math.max(0, Math.min(maxAllowed, st.numMisteriosos + delta));
+  // Enforce at least 1 total infiltrator
+  if (st.numImpostors + n < 1) return;
+  GameEngine.setState({ numMisteriosos: n });
+  const el = document.getElementById('mist-count');
+  if (el) el.textContent = n;
+  _updateRoleSummary();
+}
+
+function _updateRoleSummary() {
+  const el = document.getElementById('role-summary');
+  if (el) el.textContent = _getRoleSummary();
 }
 
 function _selectCat(id) {
@@ -181,14 +243,24 @@ function _adjPlayers(delta) {
   SoundSystem.onButtonPress();
   const st = GameEngine.state;
   const n = Math.max(3, Math.min(12, st.numPlayers + delta));
-  const modeKey = st.mode === 'misterioso' ? 'mysterious' : 'impostor';
-  const imp = GameEngine.getRecommendedImpostors(n, modeKey);
-  const opts = GameEngine.getImpostorOptions(n);
-  GameEngine.setState({ numPlayers: n, numImpostors: imp, debateTimeSeconds: GameEngine.getRecommendedDebateTime(n) });
-  $('#player-count').textContent = n;
-  $('#imp-info').textContent = `${imp} impostor(es) · ${n - imp} ciudadano(s)${opts.options.length > 1 ? ' · Opciones: ' + opts.options.join('/') : ''}`;
+  // Clamp roles so totalInfiltrators < n
+  let imp = Math.min(st.numImpostors, n - 1);
+  let mist = Math.min(st.numMisteriosos, n - imp - 1);
+  if (imp + mist < 1) imp = 1;
+  GameEngine.setState({
+    numPlayers: n, numImpostors: imp, numMisteriosos: mist,
+    debateTimeSeconds: GameEngine.getRecommendedDebateTime(n)
+  });
+  const pc = document.getElementById('player-count');
+  if (pc) pc.textContent = n;
+  const ic = document.getElementById('imp-count');
+  if (ic) ic.textContent = imp;
+  const mc = document.getElementById('mist-count');
+  if (mc) mc.textContent = mist;
   const t = GameEngine.state.debateTimeSeconds;
-  $('#time-value').textContent = `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+  const tv = document.getElementById('time-value');
+  if (tv) tv.textContent = `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+  _updateRoleSummary();
 }
 
 function _adjTime(delta) {
@@ -239,7 +311,40 @@ function _startGame() {
   GameEngine.state.players.forEach((p, i) => { if (!p.name.trim()) p.name = `Jugador ${i + 1}`; });
   GameEngine.initGame();
   GameEngine.setupRound();
-  dealingCortina();
+  // Check all-impostors case
+  if (GameEngine.state.allImpostors) {
+    allImpostorsScreen();
+  } else {
+    dealingCortina();
+  }
+}
+
+// ==================== ALL IMPOSTORS (special) ====================
+function allImpostorsScreen() {
+  SoundSystem.onVictory();
+  spawnConfetti();
+  const st = GameEngine.state;
+  const roleList = st.players.map(p => {
+    const badge = p.role === 'impostor' ? '🕵️ Impostor' : '🔮 Misterioso';
+    return `<div class="score-row"><span class="score-name">${p.name}</span><span class="score-points">${badge}</span></div>`;
+  }).join('');
+
+  show(`
+    <div class="screen" style="background:var(--bg-primary)">
+      <div class="scroll-content">
+        <div class="emoji-icon animate-pulse" style="font-size:4rem">😱</div>
+        <h1 class="text-center" style="color:var(--accent-danger)">¡Todos son impostores!</h1>
+        <p class="subtitle text-center mt-md">No hay ciudadanos en esta ronda.<br>¡Nadie tenía la palabra correcta!</p>
+        <p class="subtitle text-center">Palabra: <strong>${st.currentWord}</strong></p>
+        <div class="glass-card mt-lg">${roleList}</div>
+        <div class="btn-row mt-xl">
+          <button class="btn btn-primary" onclick="SoundSystem.onButtonPress();Screens._nextRoundOrEnd()">
+            ${st.currentRound < st.numRounds ? '🔁 Siguiente ronda' : '🏅 Ver resultados'}</button>
+        </div>
+        <button class="btn btn-ghost mt-md" onclick="SoundSystem.onButtonPress();Screens.mainMenu()">🏠 Menú principal</button>
+      </div>
+    </div>
+  `);
 }
 
 // ==================== DEALING: CORTINA ====================
@@ -316,14 +421,13 @@ function dealingReveal() {
   const st = GameEngine.state;
   const pi = GameEngine.getCurrentDealingPlayerIndex();
   const player = st.players[pi];
-  const isImp = player.role === 'impostor';
 
   let content;
-  if (isImp && st.mode === 'impostor') {
-    content = `<div class="role-badge impostor">❓ IMPOSTOR</div>
+  if (player.role === 'impostor') {
+    content = `<div class="role-badge impostor">🕵️ IMPOSTOR</div>
       <p style="font-size:var(--font-size-xl);margin-top:var(--space-lg);text-align:center">No tienes palabra.<br>Haz como si la conocieras.</p>`;
-  } else if (isImp && st.mode === 'misterioso') {
-    content = `<div class="role-badge impostor">❓ IMPOSTOR</div>
+  } else if (player.role === 'misterioso') {
+    content = `<div class="role-badge impostor">🔮 MISTERIOSO</div>
       <div class="word-display" style="margin-top:var(--space-lg)">${player.word}</div>
       <p class="text-muted mt-md text-center">Tu palabra es DIFERENTE a la del resto</p>`;
   } else {
@@ -608,25 +712,39 @@ function _startTieVote(tiedIndices) {
 function eliminatedScreen(playerIndex) {
   GameEngine.resolveElimination(playerIndex);
   const player = GameEngine.state.players[playerIndex];
-  const isImp = player.role === 'impostor';
+  const isInfiltrator = player.role === 'impostor' || player.role === 'misterioso';
+
+  let badgeClass, badgeLabel;
+  if (player.role === 'impostor') { badgeClass = 'impostor'; badgeLabel = '🕵️ IMPOSTOR'; }
+  else if (player.role === 'misterioso') { badgeClass = 'impostor'; badgeLabel = '🔮 MISTERIOSO'; }
+  else { badgeClass = 'citizen'; badgeLabel = '✅ CIUDADANO'; }
+
   show(`
     <div class="screen" style="background:var(--bg-primary)">
       <div class="emoji-icon animate-shake">🚫</div><h1 class="text-center">Eliminado</h1>
       <div class="glass-card text-center mt-lg animate-scale-in">
         <p style="font-size:var(--font-size-2xl);font-weight:800">${player.name}</p>
-        <div class="mt-md"><span class="role-badge ${isImp ? 'impostor' : 'citizen'}">${isImp ? '❓ IMPOSTOR' : '✅ CIUDADANO'}</span></div>
+        <div class="mt-md"><span class="role-badge ${badgeClass}">${badgeLabel}</span></div>
       </div>
       <button class="btn btn-primary mt-xl animate-fade-in-up delay-3"
-        onclick="SoundSystem.onButtonPress();Screens._afterElim(${playerIndex},${isImp})">Continuar</button>
+        onclick="SoundSystem.onButtonPress();Screens._afterElim(${playerIndex},'${player.role}')">Continuar</button>
     </div>
   `);
 }
 
-function _afterElim(playerIndex, isImp) {
-  const st = GameEngine.state;
-  if (isImp && st.mode === 'impostor') guessScreen(playerIndex);
-  else if (isImp) victoryScreen('citizen_win');
-  else victoryScreen('impostor_win_not_found');
+function _afterElim(playerIndex, role) {
+  // Classic impostor eliminated → gets to guess the word
+  if (role === 'impostor') {
+    guessScreen(playerIndex);
+  }
+  // Misterioso eliminated → no guess, citizens win
+  else if (role === 'misterioso') {
+    victoryScreen('citizen_win');
+  }
+  // Citizen eliminated → infiltrators win
+  else {
+    victoryScreen('impostor_win_not_found');
+  }
 }
 
 // ==================== GUESS (with Levenshtein validation) ====================
@@ -697,29 +815,35 @@ function _guessHoldEnd(e) {
 function victoryScreen(result) {
   const st = GameEngine.state;
   const scores = GameEngine.calculateRoundScores(result);
-  const impostors = GameEngine.getImpostors();
-  const impNames = impostors.map(p => p.name).join(', ');
+  const infiltrators = GameEngine.getInfiltrators();
+  const infNames = infiltrators.map(p => {
+    const icon = p.role === 'misterioso' ? '🔮' : '🕵️';
+    return `${icon} ${p.name}`;
+  }).join(', ');
 
   let title, emoji, color;
   if (result === 'citizen_win') { title = '¡Victoria de los Ciudadanos!'; emoji = '🏆'; color = 'var(--accent-success)'; }
   else if (result === 'impostor_win_steal') { title = '¡Robo de Victoria!'; emoji = '🎭'; color = 'var(--accent-danger)'; }
-  else { title = '¡Victoria del Impostor!'; emoji = '🕵️'; color = 'var(--accent-danger)'; }
+  else { title = '¡Victoria de los Infiltrados!'; emoji = '🕵️'; color = 'var(--accent-danger)'; }
 
   SoundSystem.onVictory();
   spawnConfetti();
 
-  const scoreRows = scores.map(s => `<div class="score-row">
-    <span class="score-name">${s.name}</span><span class="score-detail">${s.detail}</span>
+  const scoreRows = scores.map(s => {
+    const roleIcon = s.role === 'impostor' ? '🕵️' : s.role === 'misterioso' ? '🔮' : '✅';
+    return `<div class="score-row">
+    <span class="score-name">${roleIcon} ${s.name}</span><span class="score-detail">${s.detail}</span>
     <span class="score-points">${s.points >= 0 ? '+' : ''}${s.points}</span>
-  </div>`).join('');
+  </div>`;
+  }).join('');
 
   show(`
     <div class="screen" style="background:var(--bg-primary);justify-content:flex-start;padding-top:var(--space-xl)">
       <div class="scroll-content">
         <div class="emoji-icon animate-pulse" style="font-size:4rem">${emoji}</div>
         <h1 class="text-center" style="color:${color}">${title}</h1>
-        <p class="subtitle text-center mt-sm">Impostor: ${impNames}</p>
-        <p class="subtitle text-center">Palabra: <strong>${st.currentWord}</strong></p>
+        <p class="subtitle text-center mt-sm">Infiltrados: ${infNames}</p>
+        <p class="subtitle text-center">Palabra: <strong>${st.currentWord}</strong>${st.impostorWord ? ` · Similar: <strong>${st.impostorWord}</strong>` : ''}</p>
         <div class="glass-card mt-lg"><h3 class="text-center mb-md">Puntos esta ronda</h3>${scoreRows}</div>
         <div class="btn-row mt-xl">
           <button class="btn btn-primary" onclick="SoundSystem.onButtonPress();Screens._nextRoundOrEnd()">
@@ -733,7 +857,12 @@ function victoryScreen(result) {
 
 function _nextRoundOrEnd() {
   const st = GameEngine.state;
-  if (st.currentRound < st.numRounds) { st.currentRound++; GameEngine.setupRound(); dealingCortina(); }
+  if (st.currentRound < st.numRounds) {
+    st.currentRound++;
+    GameEngine.setupRound();
+    if (GameEngine.state.allImpostors) allImpostorsScreen();
+    else dealingCortina();
+  }
   else finalScores();
 }
 
@@ -787,7 +916,9 @@ export const Screens = {
   dealingCortina, dealingReady, dealingReveal, dealingConfirm, debateScreen,
   votingAnnounce, votingCortina, votingSelect, votingReveal,
   tiebreakScreen, eliminatedScreen, guessScreen, victoryScreen, finalScores,
-  _toggle, _selectMode, _selectCat, _adjPlayers, _adjTime, _adjRounds,
+  allImpostorsScreen,
+  _toggle, _selectCat, _adjPlayers, _adjTime, _adjRounds,
+  _adjImpostors, _adjMisteriosos, _toggleRandom,
   _startGame, _viewAgain, _nextPlayer, _toggleTimer, _nextClue, _goToVoting,
   _selectVote, _voteHoldStart, _voteHoldEnd, _confirmVote, _flipCards,
   _startTieVote, _afterElim, _guessHoldStart, _guessHoldEnd, _nextRoundOrEnd,

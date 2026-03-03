@@ -5,7 +5,7 @@
    No duplicated balance logic — single source of truth.
    ============================================================ */
 
-import { getRecommendedImpostors, getImpostorOptions } from './balance/impostor_ratio.js';
+import { getRecommendedImpostors, getImpostorOptions, getValidRoleCombinations } from './balance/impostor_ratio.js';
 import { createEloProfile, updateElo, getDifficultyBand } from './balance/elo_system.js';
 import { selectWord, selectSemanticPair } from './balance/word_selector.js';
 import { validateGuess, createGuessSession, processGuessAttempt } from './balance/guess_validator.js';
@@ -33,9 +33,11 @@ let settings = { ...DEFAULT_SETTINGS };
 // --- Game State ---
 let state = {
     phase: 'menu',
-    mode: 'impostor', // impostor | misterioso
     numPlayers: 4,
     numImpostors: 1,
+    numMisteriosos: 0,
+    randomRoles: false,
+    allImpostors: false,  // true when random assigns 0 citizens
     categoryId: 'animals',
     debateTimeSeconds: 180,
     numClueRounds: 1,
@@ -114,11 +116,15 @@ function updateEloAfterRound(players, result) {
     const profiles = loadEloProfiles();
     players.forEach(p => {
         const profile = profiles[p.name] || createEloProfile(p.name);
-        const votedCorrectly = p.votedFor !== null && players[p.votedFor]?.role === 'impostor';
-        const won = (p.role === 'impostor')
-            ? (result === 'impostor_win_not_found' || result === 'impostor_win_steal' || result === 'impostor_survive')
+        const votedForRole = p.votedFor !== null ? players[p.votedFor]?.role : null;
+        const votedCorrectly = votedForRole === 'impostor' || votedForRole === 'misterioso';
+        const isInfiltrator = p.role === 'impostor' || p.role === 'misterioso';
+        const won = isInfiltrator
+            ? (result !== 'citizen_win')
             : (result === 'citizen_win');
-        profiles[p.name] = updateElo(profile, p.role, { won, votedCorrectly });
+        // ELO system treats both infiltrator types as 'impostor' role
+        const eloRole = isInfiltrator ? 'impostor' : 'citizen';
+        profiles[p.name] = updateElo(profile, eloRole, { won, votedCorrectly });
     });
     saveEloProfiles(profiles);
 }
@@ -142,27 +148,40 @@ function initGame() {
 
 function setupRound() {
     const numPlayers = state.players.length;
-    const numImpostors = state.numImpostors;
-    const modeKey = state.mode === 'misterioso' ? 'mysterious' : 'impostor';
 
-    // Determine impostor(s)
+    // --- Determine role counts ---
+    let numImp, numMist;
+    if (state.randomRoles) {
+        // Random: at least 1 infiltrator total, 0..N citizens allowed
+        const totalInfiltrators = 1 + Math.floor(Math.random() * numPlayers); // 1..N
+        numImp = Math.floor(Math.random() * (totalInfiltrators + 1)); // 0..totalInfiltrators
+        numMist = totalInfiltrators - numImp;
+    } else {
+        numImp = state.numImpostors;
+        numMist = state.numMisteriosos;
+    }
+
+    const numCitizens = numPlayers - numImp - numMist;
+    state.allImpostors = numCitizens <= 0;
+
+    // --- Shuffle and assign roles ---
     const indices = Array.from({ length: numPlayers }, (_, i) => i);
     shuffleArray(indices);
-    const impostorIndices = new Set(indices.slice(0, numImpostors));
+    const impostorIndices = new Set(indices.slice(0, numImp));
+    const misteriososIndices = new Set(indices.slice(numImp, numImp + numMist));
 
-    // Get the impostor's ELO for word selection
-    const firstImpostorIdx = indices[0];
-    const impostorName = state.players[firstImpostorIdx].name;
-    const impostorElo = getPlayerElo(impostorName);
+    // Get reference ELO from first infiltrator for word selection
+    const firstInfiltratorIdx = indices[0];
+    const infiltratorName = state.players[firstInfiltratorIdx].name;
+    const infiltratorElo = getPlayerElo(infiltratorName);
 
-    // Select word using balance module (ELO-aware)
+    // --- Select citizen word (always needed) ---
     const wordPool = getWordPool(state.categoryId);
-    const selectedWordEntry = selectWord(wordPool, impostorElo, state.usedWordIds);
+    const selectedWordEntry = selectWord(wordPool, infiltratorElo, state.usedWordIds);
 
     if (!selectedWordEntry) {
-        // Fallback: reset cooldown and retry
         state.usedWordIds.clear();
-        const fallback = selectWord(wordPool, impostorElo, state.usedWordIds);
+        const fallback = selectWord(wordPool, infiltratorElo, state.usedWordIds);
         if (!fallback) return;
         state.currentWordEntry = fallback;
     } else {
@@ -172,35 +191,38 @@ function setupRound() {
     state.currentWord = state.currentWordEntry.text;
     state.usedWordIds.add(state.currentWordEntry.id);
 
-    // Select semantic pair for Misterioso mode (ELO-aware)
-    if (state.mode === 'misterioso' && state.currentWordEntry.pairs.length > 0) {
-        // Convert pairs to format expected by selectSemanticPair
+    // --- Select semantic pair for misteriosos (if any) ---
+    if (numMist > 0 && state.currentWordEntry.pairs && state.currentWordEntry.pairs.length > 0) {
         const pairsForSelector = state.currentWordEntry.pairs.map(p => ({
             impostorWord: p.word,
             similarity: p.similarity,
         }));
-        const selectedPair = selectSemanticPair(state.currentWordEntry, pairsForSelector, impostorElo);
+        const selectedPair = selectSemanticPair(state.currentWordEntry, pairsForSelector, infiltratorElo);
         state.impostorWord = selectedPair ? selectedPair.impostorWord : state.currentWordEntry.pairs[0].word;
     } else {
         state.impostorWord = null;
     }
 
-    // Assign roles
+    // --- Assign roles and words ---
     state.players.forEach((p, i) => {
-        p.role = impostorIndices.has(i) ? 'impostor' : 'citizen';
-        if (p.role === 'citizen') {
-            p.word = state.currentWord;
+        if (impostorIndices.has(i)) {
+            p.role = 'impostor';
+            p.word = '';  // blank (hint logic handled by Prompt 3)
+        } else if (misteriososIndices.has(i)) {
+            p.role = 'misterioso';
+            p.word = state.impostorWord || '';  // similar word
         } else {
-            p.word = state.mode === 'misterioso' ? state.impostorWord : '';
+            p.role = 'citizen';
+            p.word = state.currentWord;
         }
         p.eliminated = false;
         p.votedFor = null;
     });
 
-    // Generate turn order using balance module (ELO-aware positioning)
+    // --- Turn order (ELO-aware) ---
     const playerIds = state.players.map((_, i) => String(i));
-    const impostorId = String(firstImpostorIdx);
-    const turnOrderIds = generateTurnOrder(playerIds, impostorId, impostorElo);
+    const impostorId = String(firstInfiltratorIdx);
+    const turnOrderIds = generateTurnOrder(playerIds, impostorId, infiltratorElo);
     state.clueOrder = turnOrderIds.map(Number);
 
     // Reset dealing
@@ -266,24 +288,29 @@ function checkGuessResult(guess) {
 }
 
 function calculateRoundScores(result) {
-    const modeKey = state.mode === 'misterioso' ? 'mysterious' : 'impostor';
     const allVotes = state.votes;
-    const impostorIndices = state.players
+    // Infiltrator = impostor OR misterioso
+    const infiltratorIndices = state.players
         .map((p, i) => ({ p, i }))
-        .filter(x => x.p.role === 'impostor')
+        .filter(x => x.p.role === 'impostor' || x.p.role === 'misterioso')
         .map(x => x.i);
 
-    // Check if all votes targeted an impostor (unanimity)
-    const allCorrect = Object.values(allVotes).every(v => impostorIndices.includes(v));
+    // Check if all votes targeted an infiltrator (unanimity)
+    const allCorrect = Object.values(allVotes).every(v => infiltratorIndices.includes(v));
 
     const scores = state.players.map((player, i) => {
-        const votedCorrectly = player.votedFor !== null && state.players[player.votedFor]?.role === 'impostor';
-        const won = (player.role === 'impostor')
+        const isInfiltrator = player.role === 'impostor' || player.role === 'misterioso';
+        const votedForRole = player.votedFor !== null ? state.players[player.votedFor]?.role : null;
+        const votedCorrectly = votedForRole === 'impostor' || votedForRole === 'misterioso';
+        const won = isInfiltrator
             ? (result !== 'citizen_win')
             : (result === 'citizen_win');
 
+        // Per-player mode for scoring: misterioso uses 'mysterious' scoring
+        const modeKey = player.role === 'misterioso' ? 'mysterious' : 'impostor';
+
         let outcome;
-        if (player.role === 'impostor') {
+        if (isInfiltrator) {
             if (result === 'citizen_win') outcome = 'eliminated';
             else if (result === 'impostor_win_steal') outcome = 'guessed_word';
             else if (result === 'impostor_win_not_found') outcome = 'citizen_eliminated';
@@ -294,16 +321,16 @@ function calculateRoundScores(result) {
 
         const roundResult = {
             playerId: String(i),
-            role: player.role,
+            role: isInfiltrator ? 'impostor' : 'citizen',  // scoring.js expects 'impostor'|'citizen'
             mode: modeKey,
             outcome,
             won,
             voted: player.votedFor !== null,
             votedCorrectly,
-            gaveGoodClue: false, // Not tracked in current UI
+            gaveGoodClue: false,
             achievements: {
-                unanimity: player.role === 'citizen' && allCorrect && result === 'citizen_win',
-                loneWolf: player.role === 'impostor' && won && state.players.length >= BALANCE_CONFIG.SCORING.BONUS.LONE_WOLF_MIN_PLAYERS,
+                unanimity: !isInfiltrator && allCorrect && result === 'citizen_win',
+                loneWolf: isInfiltrator && won && state.players.length >= BALANCE_CONFIG.SCORING.BONUS.LONE_WOLF_MIN_PLAYERS,
             },
         };
 
@@ -405,6 +432,7 @@ export const GameEngine = {
     // Balance module re-exports (for UI consumption)
     getRecommendedImpostors,
     getImpostorOptions,
+    getValidRoleCombinations,
     getRecommendedDebateTime,
     getDifficultyBand,
 
@@ -456,5 +484,8 @@ export const GameEngine = {
     },
     getImpostors() {
         return state.players.map((p, i) => ({ ...p, index: i })).filter(p => p.role === 'impostor');
+    },
+    getInfiltrators() {
+        return state.players.map((p, i) => ({ ...p, index: i })).filter(p => p.role === 'impostor' || p.role === 'misterioso');
     },
 };

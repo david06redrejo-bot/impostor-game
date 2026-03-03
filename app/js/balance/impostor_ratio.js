@@ -103,3 +103,23 @@ export function generateRatioTable() {
     }
     return rows;
 }
+
+/**
+ * Devuelve las combinaciones de roles válidas para un número de jugadores.
+ *
+ * @param {number} numPlayers - Número total de jugadores (3–12)
+ * @returns {{
+ *   maxInfiltrators: number,
+ *   recommended: { impostors: number, misteriosos: number },
+ *   minCitizens: number
+ * }}
+ */
+export function getValidRoleCombinations(numPlayers) {
+    const recImp = getRecommendedImpostors(numPlayers, 'impostor');
+    return {
+        maxInfiltrators: numPlayers - 1,  // at least 1 citizen in manual mode
+        recommended: { impostors: recImp, misteriosos: 0 },
+        minCitizens: 1,
+    };
+}
+
