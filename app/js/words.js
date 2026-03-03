@@ -159,7 +159,7 @@ export const WORD_DATABASE = {
             ]
         },
         {
-            id: 'science', name: 'Ciencia y Tecnología', emoji: '🧪', premium: true,
+            id: 'science', name: 'Ciencia y Tecnología', emoji: '🧪', premium: false,
             words: [
                 { id: 'sc_01', text: 'Robot', difficulty: 2, frequency: 4, pairs: [{ word: 'Androide', similarity: 0.90, tier: 'A' }, { word: 'Dron', similarity: 0.62, tier: 'B' }, { word: 'Cyborg', similarity: 0.85, tier: 'A' }] },
                 { id: 'sc_02', text: 'Telescopio', difficulty: 3, frequency: 3, pairs: [{ word: 'Microscopio', similarity: 0.85, tier: 'A' }, { word: 'Prismáticos', similarity: 0.72, tier: 'B' }, { word: 'Lupa', similarity: 0.65, tier: 'B' }] },
@@ -184,7 +184,7 @@ export const WORD_DATABASE = {
             ]
         },
         {
-            id: 'emotions', name: 'Emociones', emoji: '🎭', premium: true,
+            id: 'emotions', name: 'Emociones', emoji: '🎭', premium: false,
             words: [
                 { id: 'em_01', text: 'Alegría', difficulty: 1, frequency: 5, pairs: [{ word: 'Euforia', similarity: 0.85, tier: 'A' }, { word: 'Felicidad', similarity: 0.92, tier: 'A' }, { word: 'Entusiasmo', similarity: 0.78, tier: 'A' }] },
                 { id: 'em_02', text: 'Tristeza', difficulty: 1, frequency: 5, pairs: [{ word: 'Melancolía', similarity: 0.85, tier: 'A' }, { word: 'Nostalgia', similarity: 0.72, tier: 'B' }, { word: 'Pena', similarity: 0.88, tier: 'A' }] },

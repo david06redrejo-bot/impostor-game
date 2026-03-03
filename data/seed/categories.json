@@ -1,14 +1,74 @@
 [
-  {"name": "Animales", "icon_emoji": "🐾", "is_premium": false, "sort_order": 1},
-  {"name": "Comida y Bebida", "icon_emoji": "🍕", "is_premium": false, "sort_order": 2},
-  {"name": "Deportes", "icon_emoji": "⚽", "is_premium": false, "sort_order": 3},
-  {"name": "Países y Ciudades", "icon_emoji": "🌍", "is_premium": false, "sort_order": 4},
-  {"name": "Cine y TV", "icon_emoji": "🎬", "is_premium": false, "sort_order": 5},
-  {"name": "Música", "icon_emoji": "🎵", "is_premium": false, "sort_order": 6},
-  {"name": "Ciencia y Tecnología", "icon_emoji": "🧪", "is_premium": true, "sort_order": 7},
-  {"name": "Literatura y Mitología", "icon_emoji": "📚", "is_premium": true, "sort_order": 8},
-  {"name": "Arte y Cultura", "icon_emoji": "🎨", "is_premium": true, "sort_order": 9},
-  {"name": "Memes y Cultura Pop", "icon_emoji": "😂", "is_premium": true, "sort_order": 10},
-  {"name": "Profesiones y Oficios", "icon_emoji": "💼", "is_premium": true, "sort_order": 11},
-  {"name": "Emociones y Conceptos", "icon_emoji": "🎭", "is_premium": true, "sort_order": 12}
+  {
+    "name": "Animales",
+    "icon_emoji": "🐾",
+    "is_premium": false,
+    "sort_order": 1
+  },
+  {
+    "name": "Comida y Bebida",
+    "icon_emoji": "🍕",
+    "is_premium": false,
+    "sort_order": 2
+  },
+  {
+    "name": "Deportes",
+    "icon_emoji": "⚽",
+    "is_premium": false,
+    "sort_order": 3
+  },
+  {
+    "name": "Países y Ciudades",
+    "icon_emoji": "🌍",
+    "is_premium": false,
+    "sort_order": 4
+  },
+  {
+    "name": "Cine y TV",
+    "icon_emoji": "🎬",
+    "is_premium": false,
+    "sort_order": 5
+  },
+  {
+    "name": "Música",
+    "icon_emoji": "🎵",
+    "is_premium": false,
+    "sort_order": 6
+  },
+  {
+    "name": "Ciencia y Tecnología",
+    "icon_emoji": "🧪",
+    "is_premium": false,
+    "sort_order": 7
+  },
+  {
+    "name": "Literatura y Mitología",
+    "icon_emoji": "📚",
+    "is_premium": false,
+    "sort_order": 8
+  },
+  {
+    "name": "Arte y Cultura",
+    "icon_emoji": "🎨",
+    "is_premium": false,
+    "sort_order": 9
+  },
+  {
+    "name": "Memes y Cultura Pop",
+    "icon_emoji": "😂",
+    "is_premium": false,
+    "sort_order": 10
+  },
+  {
+    "name": "Profesiones y Oficios",
+    "icon_emoji": "💼",
+    "is_premium": false,
+    "sort_order": 11
+  },
+  {
+    "name": "Emociones y Conceptos",
+    "icon_emoji": "🎭",
+    "is_premium": false,
+    "sort_order": 12
+  }
 ]
