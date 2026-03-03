@@ -1,6 +1,6 @@
 # Prompts para Agentes Especialistas — Fase 2: Agilización del Juego
 
-> Tres prompts diseñados para implementar cambios que agilizan y enriquecen "El Impostor".
+> Cuatro prompts diseñados para implementar cambios que agilizan y enriquecen "El Impostor".
 > Cada agente opera sobre ficheros concretos y **no debe tocar** los ficheros asignados a los otros.
 
 ---
@@ -220,18 +220,139 @@ En `dealingReveal()` de `screens.js`, si el jugador es impostor y `state.imposto
 
 ---
 
+## Prompt 4 — Agente de Persistencia de Nombres (Player Roster)
+
+### Contexto del Proyecto
+
+Antes de hacer cualquier cambio, **lee** los siguientes archivos:
+
+| Archivo | Razón |
+|---------|-------|
+| `app/js/screens.js` | Contiene `playerNames()` y `_startGame()`. Tu zona principal de trabajo para la UI del roster. |
+| `app/js/game.js` | Motor del juego. Entender cómo `state.players` se inicializa y cómo `initGame()` consume los nombres. |
+| `app/js/app.js` | Entry point. Entender el flujo de inicialización (`DOMContentLoaded` → `loadSettings()` → `splash()`). |
+| `docs/reglas_del_juego.md` | Reglas oficiales. |
+
+### Problema Actual
+
+Cada vez que un usuario abre la app o inicia una partida nueva, debe escribir **manualmente** el nombre de cada jugador en la pantalla `playerNames()`. En un juego de fiesta donde los mismos amigos juegan repetidamente, esto es tedioso y rompe el ritmo.
+
+Código actual en `screens.js`:
+```javascript
+function playerNames() {
+  const st = GameEngine.state;
+  if (st.players.length !== st.numPlayers) {
+    st.players = Array.from({ length: st.numPlayers }, (_, i) => ({ name: '' }));
+  }
+  // ... renders empty inputs
+}
+```
+
+Los nombres se pierden al recargar la página o al cerrar la app.
+
+### Cambio Requerido
+
+#### 4a. Guardar nombres en localStorage
+
+Crear un sistema de **roster** (plantilla de jugadores) persistente:
+
+- **Clave localStorage**: `impostor_player_roster`
+- **Formato**: Un array de strings con los nombres usados recientemente, ordenados por última vez que jugaron (más recientes primero).
+- **Máximo**: 20 nombres guardados.
+- **Se actualiza** automáticamente al pulsar "¡Empezar!" en `_startGame()`, guardando los nombres de la partida actual.
+
+#### 4b. Auto-rellenar nombres al entrar en `playerNames()`
+
+Cuando se entra en la pantalla de nombres:
+1. Cargar el roster desde localStorage.
+2. Auto-rellenar los campos con los primeros N nombres del roster (donde N = `numPlayers`).
+3. El usuario puede **editar** cualquier nombre pre-rellenado.
+4. Si hay menos nombres guardados que jugadores, los campos restantes quedan vacíos.
+
+#### 4c. UI de gestión rápida del roster
+
+Añadir debajo de los inputs de nombres:
+
+1. **Sección "Jugadores recientes"** (si hay nombres guardados): una lista horizontal de chips/badges con los nombres del roster. Tocar un chip lo añade al primer campo vacío.
+2. **Botón "Borrar plantilla"**: un link pequeño al final que vacía el roster de localStorage (con confirmación).
+
+Diseño de los chips:
+```html
+<div class="roster-chips">
+  <span class="roster-chip" onclick="...">David</span>
+  <span class="roster-chip" onclick="...">Ana</span>
+  <span class="roster-chip" onclick="...">Carlos</span>
+</div>
+```
+
+#### 4d. Funciones de API en game.js
+
+Añadir al `GameEngine`:
+```javascript
+// Carga el roster desde localStorage
+loadRoster() → string[]
+
+// Guarda el roster en localStorage (deduplica, max 20, más recientes primero)
+saveRoster(names: string[]) → void
+
+// Borra el roster
+clearRoster() → void
+```
+
+### Archivos que DEBES modificar
+
+- **`app/js/game.js`**:
+  - Añadir constante `ROSTER_KEY = 'impostor_player_roster'`.
+  - Implementar `loadRoster()`, `saveRoster()`, `clearRoster()`.
+  - Exportar las 3 funciones en el objeto `GameEngine`.
+  - En `_startGame()` (o desde screens.js tras llamar a `_startGame`), invocar `saveRoster()` con los nombres actuales.
+- **`app/js/screens.js`**:
+  - Modificar `playerNames()` para:
+    - Llamar a `GameEngine.loadRoster()` al renderizar.
+    - Auto-rellenar los inputs con los nombres del roster.
+    - Renderizar la sección de chips con jugadores recientes.
+    - Renderizar el botón "Borrar plantilla".
+  - Añadir funciones auxiliares:
+    - `_addFromRoster(name)`: asigna el nombre al primer campo vacío.
+    - `_clearRoster()`: limpia el localStorage previa confirmación y re-renderiza.
+- **`app/css/styles.css`**:
+  - Añadir estilos para `.roster-chips` y `.roster-chip` (chips redondeados, fondo semi-transparente, hover effect).
+  - Añadir estilo para `.roster-clear-btn` (link pequeño y sutil).
+
+### Archivos que NO DEBES tocar
+
+- `app/js/words.js`
+- `app/js/balance/*` (todos los módulos de balance)
+- `app/js/sounds.js`
+- `app/js/app.js` (no necesitas modificar el entry point)
+- `app/index.html`
+
+### Restricciones técnicas
+
+- Los nombres se guardan **sin duplicados** y en **minúsculas** para la comparación (pero se muestran con la capitalización original).
+- Al guardar, mover los nombres recién usados al principio del array (MRU = Most Recently Used).
+- Si un nombre del roster ya está asignado a un input, no mostrarlo como chip disponible (evitar duplicados en la misma partida).
+- Usar `try/catch` alrededor de todas las operaciones de localStorage (igual que el resto del código hace con `loadSettings()`, `loadStats()`, etc.).
+- Mantener la estética existente: los chips deben usar colores coherentes con el tema (`var(--accent)`, `var(--surface)`, bordes `var(--border)`).
+- Coordinar con Agente 2: si el Agente 2 modifica la pantalla `config()`, el Agente 4 solo toca `playerNames()`, que es una pantalla posterior y **no se solapa**.
+
+---
+
 ## Matriz de No-Solapamiento
 
-| Archivo | Agente 1 (Votación) | Agente 2 (Roles) | Agente 3 (Pista) |
-|---------|:-------------------:|:-----------------:|:----------------:|
-| `screens.js` — votación | ✅ Reescribe | ❌ | ❌ |
-| `screens.js` — config | ❌ | ✅ Modifica | ✅ Añade toggle |
-| `screens.js` — dealing | ❌ | ❌ | ✅ Modifica |
-| `game.js` — voting/tally | ✅ Simplifica | ❌ | ❌ |
-| `game.js` — state/setup | ❌ | ✅ Reescribe | ✅ Añade hint |
-| `game.js` — scores | ✅ Adapta voted | ✅ Adapta roles | ❌ |
-| `words.js` | ❌ | ❌ | ✅ Añade hints |
-| `impostor_ratio.js` | ❌ | ✅ Añade combos | ❌ |
-| `css/styles.css` | ✅ Limpia vote | ❌ | ✅ Añade hint |
+| Archivo | Agente 1 (Votación) | Agente 2 (Roles) | Agente 3 (Pista) | Agente 4 (Roster) |
+|---------|:-------------------:|:-----------------:|:----------------:|:-----------------:|
+| `screens.js` — votación | ✅ Reescribe | ❌ | ❌ | ❌ |
+| `screens.js` — config | ❌ | ✅ Modifica | ✅ Añade toggle | ❌ |
+| `screens.js` — playerNames | ❌ | ❌ | ❌ | ✅ Reescribe |
+| `screens.js` — dealing | ❌ | ❌ | ✅ Modifica | ❌ |
+| `game.js` — voting/tally | ✅ Simplifica | ❌ | ❌ | ❌ |
+| `game.js` — state/setup | ❌ | ✅ Reescribe | ✅ Añade hint | ❌ |
+| `game.js` — roster API | ❌ | ❌ | ❌ | ✅ Crea nuevo |
+| `game.js` — scores | ✅ Adapta voted | ✅ Adapta roles | ❌ | ❌ |
+| `words.js` | ❌ | ❌ | ✅ Añade hints | ❌ |
+| `impostor_ratio.js` | ❌ | ✅ Añade combos | ❌ | ❌ |
+| `css/styles.css` | ✅ Limpia vote | ❌ | ✅ Añade hint | ✅ Añade roster |
 
-> **Orden de ejecución recomendado**: Agente 3 primero (datos), luego Agente 2 (lógica de roles), finalmente Agente 1 (UI de votación). Los Agentes 2 y 3 pueden ejecutarse en paralelo si se respetan las zonas.
+> **Orden de ejecución recomendado**: Agente 3 primero (datos), luego Agente 2 (lógica de roles) + Agente 4 (roster) en paralelo, finalmente Agente 1 (UI de votación).
+
